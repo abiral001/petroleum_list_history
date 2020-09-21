@@ -1,3 +1,5 @@
+# REJECTED
+
 # YI Internship Project - Backend
 
 ## About this project
