@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Oil Sales</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <h1 align='center'> Oil Sales - YI Internship Project</h1>
+            <form action='/processresult' method='POST'>
+                <table style="width:100%">
+                    <tr>
+                        <th>Petroleum Product</th>
+                        <th>
+                            <select name='petroleum' id = 'oilname'>
+                                <% for (let i=0; i<oilname.length; i++) { %>
+                                        <option value=<%=i%>> <%=oilname[i] %></option>
+                                    <% } %>
+                            </select>
+                        </th>
+                        <th>Min Year</th>
+                        <th>
+                            <select name='minYear' id = 'year1'>
+                                <% for (let i=2000; i<=2014; i++) { %>
+                                        <option value=<%=i%>> <%=i %></option>
+                                    <% } %>
+                            </select>
+                        </th>
+                        <th>Max Year</th>
+                        <th>
+                            <select name='maxYear' id = 'year2'>
+                                <% for (let i=2000; i<=2014; i++) { %>
+                                    <option value=<%=i%>> <%=i %></option>
+                                <% } %>
+                            </select>
+                        </th>
+                        <th>
+                            <button type="submit"> Process parameters</button>
+            </form>
+            <form action='/' method='GET'>
+                        </th>
+                        <th>
+                            <button type="submit"> Reset table</button>
+                        </th>
+                    </tr>
+                </table>
+            </form>
+            <table border = 1 style = 'width:100%'>
+                <tr>
+                    <th>Product</th>
+                    <th>Year</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>Average</th>
+                </tr>
+                <% for (var i = 0; i < data.length; i++) { %>
+                    <% if (i%6 === 0) { %>
+                        <tr>
+                        <% } %>
+                    <% if (i%6 === 1) { %>
+                        <th><%=data[i] %> - <%=data[i+1] %></th>
+                        <% continue %>
+                        <% } %>
+                    <% if (i%6 === 2) { %>
+                        <% continue %>
+                        <% } %>
+                    <% if (i%6 === 5) { %>
+                        <th> <%=data[i] %> </th>
+                        </tr>
+                        <% continue %>
+                        <% } %>
+                    <th> <%=data[i] %> </th>
+                <% } %>
+            </table>
+        </div>
+    </body>
+</html>

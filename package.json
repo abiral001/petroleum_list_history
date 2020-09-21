@@ -1,0 +1,24 @@
+{
+  "name": "yipl-intern-petroleum-report",
+  "version": "1.0.0",
+  "description": "an intern application project",
+  "main": "report.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://luffydmonkey001@bitbucket.org/luffydmonkey001/yipl-intern-petroleum-report.git"
+  },
+  "author": "abiralpokharel",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/luffydmonkey001/yipl-intern-petroleum-report#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "sqlite": "^4.0.14",
+    "sqlite3": "^5.0.0"
+  }
+}
