@@ -1,9 +1,6 @@
-# REJECTED
-
-# YI Internship Project - Backend
 
 ## About this project
-This project was created specifically for the purpose of intership program at Young Innovations, Nepal.
+This project was created specifically for the purpose of learning js.
 
 To run this project in your computer follow the following steps:
 
